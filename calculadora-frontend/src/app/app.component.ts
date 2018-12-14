@@ -21,6 +21,6 @@ export class AppComponent {
       num1: this.numeroUm, 
       num2: this.numeroDois};
 
-      this.http.post('http://localhost:9090/calculadora', calculo).subscribe(response => this.response = response);
+      this.http.post('https://calculadorajoaonode.herokuapp.com', calculo).subscribe(response => this.response = response);
   }
 }
